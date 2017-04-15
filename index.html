@@ -1,23 +1,65 @@
----
-layout: default
----
-
-<div class="home">
-
-  <h1 class="page-heading">Posts</h1>
-
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
-  <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p>
-
+<!DOCTYPE html>
+<html lang="en">
+    <style>
+        *{
+            background-color: black;
+        }
+        .jumbotron{
+                text-align: center;
+                max-width: 52.3%;
+            }
+        #animate{
+            position: relative;
+        }
+        
+    </style>
+    
+    <script>
+            function move() {
+  var elem = document.getElementById("animate");   
+  var pos = 0;
+  var vi = jQuery("#video");
+  vi.attr("src", vi.data("autoplay-src") );
+  var id = setInterval(frame, 30);
+  function frame() {
+      pos = Math.random()*50+1;
+      if(Math.random()<.5){
+      elem.style.left = pos + 'px';
+      }
+      else{
+      elem.style.left = -pos + 'px';
+      }
+      if(Math.random()<.5){
+      elem.style.top = pos + 'px';
+      }
+      else{
+      elem.style.top = -pos + 'px';
+      }
+  }
+}
+    </script>
+    
+<head>
+  <title>Test Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Phone touch/zoom support-->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+<body>
+    <iframe id="video" width="0" height="0" src="https://www.youtube.com/embed/GQSBD_UeoEg?autoplay=0"  data-autoplay-src="https://www.youtube.com/embed/GQSBD_UeoEg?autoplay=1" frameborder="0"></iframe>
+<div class="container-fluid" > <!--Fluid container means its automatically adjusted to the width of the device's screen-->
+  <h1 class="text-center" style="color:white">Garc's test page no normies allowed</h1>
+  <p class="text-center" style="color:white">pls leave</p> 
 </div>
+    <div class="container">
+    <div class="container jumbotron">
+                <a href="#" class="btn btn" role="button" onclick="move()">
+                    <img id="animate" src="Images/EP6zBSYwqlYDb0i5uHh_HzJx2f22ncEl7E-wntsGDmw.jpg" class="img-rounded img-responsive" alt="me irl">
+                </a>
+    </div>
+    </div>
+</body>
+
+</html>
