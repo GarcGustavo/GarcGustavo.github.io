@@ -1,88 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-    <style>
-        *{
-            background-color: black;
-        }
-        .jumbotron{
-                text-align: center;
-                max-width: 52.3%;
-            }
-        #animate{
-            position: relative;
-        }
-        
-    </style>
-    
-    <script>
-            function move() {
-  var elem = document.getElementById("animate");   
-  var pos = 0;
-  var vi = jQuery("#video");
-  vi.attr("src", vi.data("autoplay-src") );
-  var id = setInterval(frame, 30);
-  function frame() {
-      pos = Math.random()*50+1;
-      if(Math.random()<.5){
-      elem.style.left = pos + 'px';
-      }
-      else{
-      elem.style.left = -pos + 'px';
-      }
-      if(Math.random()<.5){
-      elem.style.top = pos + 'px';
-      }
-      else{
-      elem.style.top = -pos + 'px';
-      }
-  }
-}
-    </script>
-    
-<head>
-  <title>Garc's site</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--Phone touch/zoom support-->
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-</head>
-<body>
-    
-    <h1 class="text-center" style="color:white"> Crows suck Crabs ruLe! </h1>
-    <img id="animate" src="Images/mexico.gif" class="img-responsive" alt="me irl" align="left" >
-    
-    <img id="animate" src="Images/Money_Chest.gif" class="img-responsive" alt="me irl" align="left" >
-    <img id="animate" src="Images/money.gif" class="img-responsive" alt="me irl" align="right" >
-    <img id="animate" src="Images/money.gif" class="img-responsive" alt="me irl" align="right" >
-        <img id="animate" src="Images/doot.gif" class=" img-responsive" alt="me irl" align="right">
-        
-        <img id="animate" src="Images/construction.gif" class="img-responsive" alt="me irl" align="right">
-        
-        <img id="animate" src="Images/doot.gif" class=" img-responsive" alt="me irl" align="right">
-        <img id="animate" src="Images/dbz.gif" class="img-responsive" alt="me irl" align="left" >
-        
-        <img id="animate" src="Images/money.gif" class="img-responsive" alt="me irl" align="left" >
-    <img id="animate" src="Images/money.gif" class="img-responsive" alt="me irl" align="right" >
-    
-    <img id="animate" src="Images/money.gif" class="img-responsive" alt="me irl" align="left" >
-    <img id="animate" src="Images/Evangelion_logo.gif" class="img-responsive" alt="me irl" align="left" >
-        
-    
-    
 
-    <!--<iframe id="video" width="0" height="0" src="https://www.youtube.com/embed/GQSBD_UeoEg?autoplay=0"  data-autoplay-src="https://www.youtube.com/embed/GQSBD_UeoEg?autoplay=1" frameborder="0"></iframe>
-<div class="container-fluid" > Fluid container means its automatically adjusted to the width of the device's screen
-  <h1 class="text-center" style="color:white">Garc's test page no normies allowed</h1>
-  <p class="text-center" style="color:white">pls leave</p> 
-</div>
-    <div class="container">
-    <div class="container jumbotron">
-                <a href="#" class="btn btn" role="button" onclick="move()">
-                    <img id="animate" src="Images/EP6zBSYwqlYDb0i5uHh_HzJx2f22ncEl7E-wntsGDmw.jpg" class="img-rounded img-responsive" alt="me irl">
-                </a>
-    </div>
-    </div>-->
-</body>
+  <head>
+  
+  <p style="font-size: 25px">Gustavo Reyes: Computer Engineering Student</p>
+  
+      <style> 
+          head{
+              color: forestgreen;
+          }
+          body{
+              word-wrap: break-word;
+              width: 500px;
+              line-height: 1.8;
+              background-color: #000000
+          }
+          
+      </style>
+  </head>
+
+  <body style = "color: forestgreen">
+
+   
+    <p>(2/25/18)<br>
+    Hello, my name is Gustavo Reyes. This is a personal blog where I will share select topics from my software engineering class, maybe some other stuff down the line too.
+    For now I plan on keeping the blog as minimalist as possible, thanks for visiting and look forward to future posts. </p>
+
+  </body>
 
 </html>
