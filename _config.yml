@@ -17,3 +17,5 @@ github_username:  GarcGustavo
 
 # Build settings
 markdown: kramdown
+
+theme: jekyll-theme-cayman
